@@ -1,0 +1,16 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix kgc: <http://w3id.org/kg-construct/> .
+@prefix transport: <http://w3id.org/kg-construct/transport/> .
+@prefix dcterms: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix example: <http://example.org/> .
+
+transport:gtfs a void:Dataset ;
+	dcterms:title "Rules for transforming GTFS feeds to Linked GTFS" ;
+	rdfs:label "GTFS" ;
+	example:language example:yarrrml ;
+	example:domain  kgc:transport ;
+	example:location "transport/gtfs.yarrrml.yml" ;
+	example:usedIn <https://doi.org/10.1016/j.websem.2020.100596> ;
+	example:source <https://developers.google.com/transit/gtfs> ;
+	example:target <http://vocab.gtfs.org/terms> .
